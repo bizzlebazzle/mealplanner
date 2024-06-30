@@ -168,7 +168,12 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        /*
+        * Providers neccesary for MongoDB functionality
+        */
         MongoDB\Laravel\MongoDBServiceProvider::class,
+        MongoDB\Laravel\Auth\PasswordResetServiceProvider::class,
+        App\Providers\SessionServiceProvider::class,
     ])->toArray(),
 
     /*
